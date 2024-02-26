@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>NOPLAY Printing Press</h1>
+        <nav>
+            <div class="hamburger">☰</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Content and Footer will go here-->
+    <main>
+        <section class="featured-article">
+            <h2>Featured Article</h2>
+            <h4>Breaking the Stigma: Addressing Mental Health in Men</h4>
+            <p>In the spotlight: Men's mental health takes center stage as society confronts the stigma and challenges surrounding it. In our featured article, we delve into the silent struggle many men face when it comes to their mental well-being. From societal expectations to barriers to seeking help, we explore the multifaceted issues that contribute to this often overlooked aspect of men's health. Discover the urgent need to break the silence and foster supportive environments where men feel empowered to prioritize their mental wellness. Read more to understand why addressing men's mental health is a critical step towards creating a healthier and more inclusive society.</p>
+            <main class="photo-gallery">
+                <div class="photo"><img src="images/ibiza.jpg" alt="Photo on Men's Mental Health"></div>
+        </section>
+        <section class="latest news">
+            <h2>Latest News</h2>
+            <h4>New Study Highlights the Importance of Sleep for Mental Health</h4> 
+            A groundbreaking study reveals the profound impact of sleep on mental well-being, particularly for men. Learn how prioritizing sleep can play a crucial role in supporting men's mental health and overall wellness.
+
+                <h4>Advocacy Groups Rally for Improved Access to Mental Health Services</h4>
+                Across the globe, advocacy groups are joining forces to demand better access to mental health services for men. Stay updated on the latest developments as these organizations work tirelessly to break down barriers and ensure that all men have access to the support they need.
+                
+                <h4>Celebrity Opens Up About His Mental Health Journey</h4> 
+                In a candid interview, a well-known celebrity shares his personal struggles with mental health and the importance of seeking help. Explore his inspiring story and discover how his journey is sparking conversations and challenging stigma surrounding men's mental health.
+                
+                <h4>Employers Take Action to Support Employee Mental Health</h4>
+                In an effort to prioritize employee well-being, companies are implementing new initiatives to support mental health in the workplace. From flexible work arrangements to employee assistance programs, learn how employers are stepping up to create healthier work environments for men.
+                
+                Stay tuned for more updates and insights on men's mental health as we continue to shine a light on this important issue.
+        </section>
+    </main>
+   <!--Hamburger script-->
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('active');
+    });
+</script>
+    <footer>
+        <p>Contact us at noplayprintingpress@gmail.com</p>
+    </footer>
+
+</body>
+</html>

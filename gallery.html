@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<nav>
+    <div class="hamburger">☰</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="article.html">Article</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+<body>
+    <main class="photo-gallery">
+        <div class="photo"><img src="images/ibiza.jpg" alt="Photo on Men's Mental Health"></div>
+        <div class="photo"><img src="images/mensmental2.jpg" alt="Photo on Men's Mental Health"></div>
+        <div class="photo"><img src="images/mensmental.png" alt="Photo on Men's Mental Health"></div>
+        <div class="photo"><img src="images/health.png" alt="Photo on Men's Mental Health"></div>
+        <div class="photo"><img src="images/mentals.jpg" alt="Photo on Men's Mental Health"></div>
+    </main>
+    <div class="gallery-controls">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const photos = document.querySelectorAll(".photo");
+    let currentIndex = 0;
+
+    function showPhoto(index) {
+        photos.forEach((photo, idx) => {
+            if (idx === index) {
+                photo.style.display = "block";
+            } else {
+                photo.style.display = "none";
+            }
+        });
+    }
+
+    function nextPhoto() {
+        currentIndex = (currentIndex + 1) % photos.length;
+        showPhoto(currentIndex);
+    }
+
+    function prevPhoto() {
+        currentIndex = (currentIndex - 1 + photos.length) % photos.length;
+        showPhoto(currentIndex);
+    }
+
+    document.getElementById("next").addEventListener("click", nextPhoto);
+    document.getElementById("prev").addEventListener("click", prevPhoto);
+
+    // Show the initial photo
+    showPhoto(currentIndex);
+});
+    </script>
+<!--Hamburger script-->
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('active');
+    });
+</script>
+</script>
+</body>
+</html>

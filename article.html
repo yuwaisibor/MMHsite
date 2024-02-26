@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="article-header">
+        <h1>Pressure Makes Anxiety</h1>
+        <p>By Yuwa Isibor | February 19, 2024</p>
+    </header>
+    <nav>
+        <div class="hamburger">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <!--Content Section and Sidebar will go here-->
+    <main class="article-content">
+        <section>
+            <h2>The Urgent Need to Address Men's Mental Health</h2>
+            <p>Men face unique challenges when it comes to mental health. From a young age, they are taught to be strong, stoic, and self-reliant. Expressing vulnerability or seeking help is often viewed as a sign of weakness, leading many men to internalize their struggles rather than seek support. As a result, mental health issues among men frequently go undiagnosed and untreated. Men's mental health is often sidelined due to societal expectations of stoicism and strength. This stigma leads many men to suffer silently, without seeking help. To address this, we must challenge traditional notions of masculinity and promote open conversations about mental health. Improving access to culturally sensitive services and fostering supportive environments are crucial steps. By breaking the silence and promoting understanding, we can create a society where men feel empowered to prioritize their mental well-being. Addressing men's mental health is a critical issue that requires collective action from individuals, communities, and policymakers alike. By breaking the silence surrounding men's mental health, promoting access to support services, and challenging societal norms, we can create a more inclusive and supportive environment where all men feel empowered to prioritize their mental well-being. It's time to recognize that real strength lies in seeking help when needed and supporting one another on the journey to mental wellness.</p>
+            <!--Add images or other multimedia content as needed-->
+        </section>
+        <!--Additional sections as needed-->
+    </main>
+    <!--Hamburger script-->
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('active');
+    });
+</script>
+    <aside class="sidebar">
+        <section class="advertisement">
+            <h3>Adpot a Kitten!</h3>
+            <p>Find your perfect kitten companion today</p>
+        </section>
+    </aside>
+</body>
+</html>
